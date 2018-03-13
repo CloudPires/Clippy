@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Clips" max_length="40" name="x_matsa_clippy_clips" type="collection">
+        <element label="Clip" max_length="20000" name="clip" type="string"/>
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <element label="URL" max_length="1024" name="url" type="url"/>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+    </element>
+</database>

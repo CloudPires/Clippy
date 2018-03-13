@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="content_css">
+    <content_css action="INSERT_OR_UPDATE">
+        <name>clippy.css</name>
+        <style>.modal-backdrop {&#13;
+position: fixed;&#13;
+top: 0;&#13;
+right: 0;&#13;
+bottom: 0;&#13;
+left: 0;&#13;
+z-index: 10 !important;&#13;
+background-color: #000;&#13;
+}</style>
+        <sys_class_name>content_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-21 02:35:20</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>46c5139bdbd4df005dbe38f0ad9619d9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>clippy.css</sys_name>
+        <sys_package display_value="Clippy" source="x_matsa_clippy">bc64df1bdbd4df005dbe38f0ad9619d3</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Clippy">bc64df1bdbd4df005dbe38f0ad9619d3</sys_scope>
+        <sys_update_name>content_css_46c5139bdbd4df005dbe38f0ad9619d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-12 19:17:45</sys_updated_on>
+        <type>local</type>
+        <url/>
+    </content_css>
+</record_update>

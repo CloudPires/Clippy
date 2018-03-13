@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <default>false</default>
+        <homepage display_value="clippy_home">0d6e3cb1dbf89b40497856f3ce9619bb</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-12 20:09:30</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ba4df0b1dbf89b40497856f3ce9619ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Clippy</sys_name>
+        <sys_package display_value="Clippy" source="x_matsa_clippy">bc64df1bdbd4df005dbe38f0ad9619d3</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Clippy">bc64df1bdbd4df005dbe38f0ad9619d3</sys_scope>
+        <sys_update_name>sp_portal_ba4df0b1dbf89b40497856f3ce9619ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-12 20:15:23</sys_updated_on>
+        <theme/>
+        <title>Clippy</title>
+        <url_suffix>clippy</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=ba4df0b1dbf89b40497856f3ce9619ba"/>
+</record_update>

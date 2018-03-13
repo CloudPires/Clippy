@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_matsa_clippy.Clippy</name>
+        <script><![CDATA[document.addEventListener('copy', function() {
+    attachClip(window.getSelection().toString());
+});
+
+function attachClip(clip) {
+    clipObj = {};
+    clipObj.clip = clip.toString();
+	clipObj.url =  window.location.href.toString();
+    var ga = new GlideAjax('x_matsa_clippy.clippyMain');
+    ga.addParam('sysparm_name', 'copyClip');
+    ga.addParam('sysparm_json', JSON.stringify(clipObj)); 
+    ga.getXMLAnswer(function(answer) {  });
+
+    }
+
+function runClippy () {
+ if (typeof top.runClippy != 'undefined') {
+        return;
+      }
+      top.runClippy = true;
+ modalHTML = '<div class="navpage-header-content">' +
+            '<button data-placement="auto" class="btn btn-icon icon-article-document"' +
+            ' onclick="document.getElementById(\'gsft_main\').contentWindow.eModal.iframe(\'clippy\', \'Clippy!!\')">' +
+              '<span class="sr-only"></span>' +
+            '</button></div>';
+          top.$j('#connect_toggle_sidebar_header_button').parents('div.navpage-header-content').first().after(modalHTML);
+}
+runClippy();
+
+
+]]></script>
+        <script_name>Clippy</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-21 02:29:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>96949b1bdbd4df005dbe38f0ad961949</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>x_matsa_clippy.Clippy</sys_name>
+        <sys_package display_value="Clippy" source="x_matsa_clippy">bc64df1bdbd4df005dbe38f0ad9619d3</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Clippy">bc64df1bdbd4df005dbe38f0ad9619d3</sys_scope>
+        <sys_update_name>sys_ui_script_96949b1bdbd4df005dbe38f0ad961949</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-13 03:34:05</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
